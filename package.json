@@ -1,0 +1,26 @@
+{
+  "name": "inventory-tracker",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Secure barcode inventory tracking application with Express, SQLite, Html5-QRCode, and Twilio SMS alerts.",
+  "main": "server.js",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "db:init": "node scripts/init-db.js"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "better-sqlite3": "^11.9.1",
+    "cookie-parser": "^1.4.7",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "express-rate-limit": "^7.5.0",
+    "helmet": "^8.0.0",
+    "jsonwebtoken": "^9.0.2",
+    "twilio": "^5.4.2",
+    "zod": "^3.24.1"
+  }
+}

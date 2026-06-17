@@ -1,0 +1,15 @@
+services:
+  inventory-tracker:
+    build: .
+    ports:
+      - "3000:3000"
+    env_file:
+      - .env
+    volumes:
+      - inventory-data:/app/data
+    environment:
+      DB_PATH: /app/data/inventory.sqlite
+      COOKIE_SECURE: "false"
+
+volumes:
+  inventory-data:
